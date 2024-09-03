@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { AppHeader } from "@/components/Header";
-
-const inter = Inter({ subsets: ["latin"] });
+import { AppFooter } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Pet Adoption Shop",
@@ -20,6 +18,7 @@ export default function RootLayout({
       <body className='font-Sans bg-[#ebe3cc]'>
         <AppHeader />
         {children}
+        <AppFooter />
       </body>
     </html>
   );

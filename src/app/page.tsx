@@ -2,111 +2,57 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <div className="grid grid-cols-[1fr_.6fr]">
+        <section className="py-24 px-[7.5%]">
+          <h1 className="uppercase text-[#062D3E] text-3xl lg:text-7xl font-semibold mb-12">A pet-first <br /> <span className="text-[#ED5C01]">approach to</span> wellness</h1>
+          <button className="rounded-[30px] bg-[#ED5C01] text-white text-xl py-4 px-6">Learn More</button>
+        </section>
+        <div className="relative pt-[1rem] overflow-hidden pr-24">
+          <div className="bg-[#062D3E] absolute h-full w-[60%] right-0 top-0 bottom-0 -z-[1]">
+          </div>
+          <Image src={require('@/assets/frame-2.png')} className="absolute -top-[10%] -z-[1] right-[50%]" alt='bg-cover' />
+          <Image src={require('@/assets/Frame-3.png')} className="absolute bottom-0 -z-[1] right-[50%]" alt='bg-cover' />
+          <Image src={require('@/assets/pattern-1.png')} className="absolute top-[50%] -translate-y-[50%] -z-[1] right-0" alt='bg-pattern' />
+          <figure className="max-w-[480px]">
+            <Image src={require('@/assets/dog000 1.png')} alt='pet dog image' />
+          </figure>
         </div>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="px-[5%] grid md:grid-cols-2 gap-8 items-center bg-[#189CAB] py-12 text-white">
+        <figure>
+          <Image src={require('@/assets/Union.png')} alt="Making pet parenting easy for everyone" />
+        </figure>
+        <section className="text-lg">
+          <h2 className="text-4xl">Making pet parenting easy for everyone</h2>
+          <p className="py-6">Could this be the dog with the longest tail? The Rampur Greyhound - shy, sensitive, alert, and faithful. This is a breed that has climbed its way to being top dog because of its intelligence</p>
+          <ul className="list-[circle] pl-8 marker:text-[#062D3E]">
+            <li>Adoption</li>
+            <li>Frozen Raw</li>
+            <li>Next Day Delivery</li>
+          </ul>
+          <button className="rounded-[30px] bg-[#062D3E] text-white text-xl py-4 px-6 mt-12">Explore</button>
+        </section>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="px-[5%] grid md:grid-cols-2 gap-8 items-center py-12 text-[#062D3E]">
+        <figure>
+          <Image src={require('@/assets/customer.png')} alt="customer" className="border-[1px] border-black rounded-[40px]" />
+        </figure>
+        <section className="text-lg">
+          <h2 className="text-4xl mb-6">Customer Reviews</h2>
+          <div className="relative max-w-[400px]">
+            <Image src={require('@/assets/Vector 1.png')} alt="customer" className="w-full" />
+            <p className="py-6 font-medium absolute top-[50%] translate-y-[-50%] left-6 right-6">As we continue to push for better regulation in the Australian pet food industry it can be hard to trust many pet food brands. Our 2021 Best Cat Food in Australia list will offer you a great starting point in deciding what to feed your cat.</p>
+          </div>
+        </section>
+      </div>
+      <div className="grid md:grid-cols-2 text-[#062D3E]">
+        <figure className="bg-[#FBBD08] px-[4%]">
+          <Image src={require('@/assets/dog.png')} alt="customer" className="mx-auto -mt-12" />
+        </figure>
+        <div className="bg-[#ED5C01] px-[8%] flex items-center">
+          <h2 className="text-4xl mb-6">Subscribe & Get Pet Updatenews</h2>
+        </div>
       </div>
     </main>
   );
